@@ -1,0 +1,24 @@
+/* kep.css */
+.kep {
+  display: inline-block;
+  margin: 20px;
+  width: 250px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Erősebb árnyék */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #2C3E50; /* Sötétebb háttér a képekhez */
+}
+
+.kep:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Képek hover effektusának erősítése */
+}
+
+.kep img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* A képek helyes arányú megjelenítése */
+  border-radius: 8px; /* Képeknek kerek sarkok */
+}

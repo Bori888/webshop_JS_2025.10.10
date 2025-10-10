@@ -1,4 +1,7 @@
 import './App.css';
+import { kepLista } from './components/adatok';
+import Footer from './components/Footer';
+import Kepek from './components/Kepek';
 import Nav from './components/Nav';
 
 function App() {
@@ -13,9 +16,13 @@ function App() {
 
       </nav>
       <article>
-        
+        <Kepek lista ={kepLista}/>
+
 
       </article>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }

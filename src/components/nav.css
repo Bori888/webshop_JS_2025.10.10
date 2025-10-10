@@ -1,0 +1,44 @@
+/* nav.css */
+.nav {
+  background-color: #2A2A2A; /* Sötét szürke háttér */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Harry P', sans-serif; /* Harry Potter betűtípus */
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #F4C542; /* HP arany szín */
+  transition: color 0.3s ease;
+  text-transform: uppercase; /* Nagybetűs szöveg */
+}
+
+.nav a:hover {
+  color: #e1a23d; /* Arany szín sötétebb árnyalata hover esetén */
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+}

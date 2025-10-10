@@ -1,9 +1,11 @@
+/* app.css */
 .App {
   text-align: center;
+  font-family: 'Arial', sans-serif;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin; /* Csökkentettük a logó méretét még inkább */
   pointer-events: none;
 }
 
@@ -14,18 +16,33 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #2A2A2A; /* Sötétebb háttér a HP hangulathoz */
+  min-height: 40vh; /* Header magasságának csökkentése */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin);
   color: white;
+  font-family: 'Harry P', sans-serif; /* Harry Potter betűtípus */
+  padding: 20px;
+  border-bottom: 4px solid #F4C542; /* HP-sárga kiemelés */
+}
+
+.App-header h1 {
+  font-size: 2.5rem; /* Kisebb cím */
+  color: #F4C542; /* Arany HP szín */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #F4C542; /* HP színekhez illő kékes-sárga link */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #e1a23d; /* Kicsit sötétebb arany szín a hover-re */
 }
 
 @keyframes App-logo-spin {
